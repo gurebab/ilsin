@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--제이쿼리 -->
+    <script src="./js/JQ.js"></script>
+
+    <!--슬라이드 외부쿼리 -->
+    <script src="./js/slick.js"></script>
+
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/nomar.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>일신바이오베이스</title>
+</head>
+<body>
+    <header>
+        <div class="header con">
+            <h1 class="logo-img">
+                <p class="for-hide">로고</p>
+                <!-- <img src="./img/logo.png" alt=""> -->
+            </h1>
+            <nav class="nav-list">
+                <ul>
+                    <p class="for-hide">메뉴</p>
+                    <li>
+                        <a href="#">제품정보</a>
+                        <div class="nav-2-depth">
+                            <ul>
+                                <li><a href="#">동결건조기</a></li>
+                                <li><a href="#">초저온냉동고</a></li>
+                                <li><a href="#">시약냉장고</a></li>
+                                <li><a href="#">제빙기</a></li>
+                                <li><a href="#">진탕기</a></li>
+                                <li><a href="#">인큐베이터</a></li>
+                                <li><a href="#">초순수정제기</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">다운로드</a>
+                        <div class="nav-2-depth">
+                            <ul>
+                                <li><a href="#">카탈로그</a></li>
+                                <li><a href="#">메뉴얼</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">고객지원</a>
+                        <div class="nav-2-depth">
+                            <ul>
+                                <li><a href="#">자주묻는 질문</a></li>
+                                <li><a href="#">연락처</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">인재채용</a>
+                        <div class="nav-2-depth">
+                            <ul>
+                                <li><a href="#">인재상</a></li>
+                                <li><a href="#">채용제도</a></li>
+                                <li><a href="#">채용공고</a></li>
+                            </ul>   
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">홍보채널</a>
+                        <div class="nav-2-depth">
+                            <ul>
+                                <li><a href="#">언론기사</a></li>
+                                <li><a href="#">미디어</a></li>
+                                <li><a href="#">수상현황</a></li>
+                                <li><a href="#">새소식</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">기업정보</a>
+                        <div class="nav-2-depth">
+                            <ul>
+                                <li><a href="#">기업소개</a></li>
+                                <li><a href="#">CEO인사</a></li>
+                                <li><a href="#">R&D</a></li>
+                                <li><a href="#">인증현황</a></li>
+                                <li><a href="#">CI</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="util">
+                <div class="util-item send-mail">
+                    <p class="for-hide">문의하기</p>
+                </div>
+                <div class="util-item lang">
+                    <p class="for-hide">language</p>
+                </div>
+                <div class="util-item ham">
+                    <p class="for-hide">모바일 메뉴</p>
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav-wrap">
+            <div class="mobile-nav-bg">   
+            </div>
+            <div class="mobile-nav">
+                <!-- 맨 위에껀 클로즈버튼, 무시 -->
+                <div class="moblie-close-wrap">
+                    <div class="close-relative">
+                        <div class="bar bar1"></div>
+                        <div class="bar bar2"></div>
+                    </div>
+                </div>
+                <div class="user-wrap">
+                    <div class="user-icon"></div>
+                    <span>로그인 해 주세요</span>
+                </div>
+                <nav class="nav-list1">
+                    <ul>
+                        <li>
+                            <p>제품정보</p>
+                            <ul>
+                                <li><a href="#">동결건조기</a></li>
+                                <li><a href="#">초저온냉동고</a></li>
+                                <li><a href="#">시약냉장고</a></li>
+                                <li><a href="#">제빙기</a></li>
+                                <li><a href="#">진탕기</a></li>
+                                <li><a href="#">인큐베이터</a></li>
+                                <li><a href="#">초순수정제기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>다운로드</p>
+                            <ul>
+                                <li><a href="#">카탈로그</a></li>
+                                <li><a href="#">메뉴얼</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>고객지원</p>
+                            <ul>
+                                <li><a href="#">자주묻는 질문</a></li>
+                                <li><a href="#">연락처</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>인재체용</p>
+                            <ul>
+                                <li><a href="#">인재상</a></li>
+                                <li><a href="#">채용제도</a></li>
+                                <li><a href="#">채용공고</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>홍보채널</p>
+                            <ul>
+                                <li><a href="#">언론기사</a></li>
+                                <li><a href="#">미디어</a></li>
+                                <li><a href="#">수상현황</a></li>
+                                <li><a href="#">새소식</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>기업정보</p>
+                            <ul>
+                                <li><a href="#">기업소개</a></li>
+                                <li><a href="#">CEO인사</a></li>
+                                <li><a href="#">R&D</a></li>
+                                <li><a href="#">인증현황</a></li>
+                                <li><a href="#">CI</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="this-wrap">
+        <p class="for-hide">대표상품 슬라이드 이미지</p>
+        <div class="slide">
+            <div class="item item1" style="background-image: url(./img/slide01.jpg);">
+                <div class="opacity-wrap">
+                    <div class="con">
+                        <span class="main-text" style="color: #ffff;">UIQUE</span>
+                        <span class="main-text" style="color: #ff7c24;">TECHNOLOGY</span>
+                        <div class="etc-wrap">
+                            <p>자동 로딩/언로딩 시스템</p>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item2" style="background-image: url(./img/slide02.jpg);">
+                <div class="opacity-wrap">
+                    <div class="con">
+                        <span class="main-text" style="color: #ffff;">FREEZE</span>
+                        <span class="main-text" style="color: #ff7c24;">DRYER</span>
+                        <div class="etc-wrap">
+                            <p>For lab</p>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item3" style="background-image: url(./img/slide03.jpg);">
+                <div class="opacity-wrap">
+                    <div class="con">
+                        <span class="main-text" style="color: #ffff;">FREEZE</span>
+                        <span class="main-text" style="color: #ff7c24;">DRYER</span>
+                        <div class="etc-wrap">
+                            <p>바로가기</p>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item4" style="background-image: url(./img/slide04.jpg);">
+                <div class="opacity-wrap">
+                    <div class="con">
+                        <span class="main-text" style="color: #ff7c24;">SAKER</span>
+                        <div class="etc-wrap">
+                            <p>바로가기</p>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item5" style="background-image: url(./img/slide05.jpg);">
+                <div class="opacity-wrap">
+                    <div class="con">
+                        <span class="main-text" style="color: #ffff;">INCUBATOR</span>
+                        <span class="main-text" style="color: #ff7c24;">BANK SYSTEM</span>
+                        <div class="etc-wrap">
+                            <p>장기 보관 기능</p>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item6" style="background-image: url(./img/slide06.jpg);">
+                <div class="opacity-wrap">
+                    <div class="con">
+                        <span class="main-text" style="color: #ffff;">BLOOD</span>
+                        <span class="main-text" style="color: #ff7c24;">BANK</span>
+                        <div class="etc-wrap">
+                            <p>마이크로 프로세서 제어</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item7" style="background-image: url(./img/slide07.jpg);">
+                <div class="opacity-wrap">
+                    <div class="con">
+                        <span class="main-text" style="color: #ffff;">FAST</span>
+                        <span class="main-text" style="color: #ff7c24;">FREEZER</span>
+                        <div class="etc-wrap">
+                            <p>IOT 외부제어 시스템</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="time-line-wrap">
+            <div class="time-line"></div>
+        </div>
+    </section>
+
+    <section class="sec sec1">
+        <div class="sec1-item-top row">
+            <div class="item-top item-top1 cell"></div>
+            <div class="item-top item-top2 cell">
+                <div class="company">
+                    <p class="for-hide">회사 소개/p>
+                    <div class="opacity-wrap">
+                        <div class="span-wrap">
+                            <span class="title">Company</span>
+                            <span>info</span>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+                <div class="conpany-info">
+                        <p>진보된기술 차별화된 시스템</p>
+                        <span>ILSIN BIO BASS</span>
+                    <div class="info">
+                        <p>우리 일신바이오 베이스는 혁신적인 경영전략을 통해 브랜드와 기업가치를 향상시킴으로써 글로벌 경쟁력을 갖춘 최고의 생명과학 장비 제조회사로 도약하였습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec sec2">
+        <div class="text-wrap">
+            <span>세계 생명과학 장비 산업의 그곳에</span>
+            <span>일신바이오</span>
+            <div class="con-history">
+                <img src="./img/company-history.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="sec sec3">
+        <div class="culum culum01">
+            <div class="con">
+                <div class="text-wrap">
+                    <div class="section-name">Vission</div>
+                    <span>국내 및 해외, 기존 사업 및 신규 사업의 균형발전 생명과학 장비 시장 기술의 리더기업으로써의 위상 확보 글로벌 경영 조직 강화 및 네트워크 체계 확대</span>
+                </div>
+            </div>
+            <img src="./img/vission-bg-01.svg" alt="">
+        </div>
+        <div class="culum culum02">
+            <div class="con">
+                <div class="text-wrap">
+                    <span>국내 및 해외, 기존 사업 및 신규 사업의 균형발전 생명과학 장비 시장 기술의 리더기업으로써의 위상 확보 글로벌 경영 조직 강화 및 네트워크 체계 확대</span>
+                </div>
+            </div>
+            <img src="./img/vission-bg-02.svg" alt="">
+        </div>
+        <div class="culum culum03">
+            <div class="con">
+                <div class="text-wrap">
+                    <span>국내 및 해외, 기존 사업 및 신규 사업의 균형발전 생명과학 장비 시장 기술의 리더기업으로써의 위상 확보 글로벌 경영 조직 강화 및 네트워크 체계 확대</span>
+                </div>
+            </div>
+            <img src="./img/vission-bg-03.svg" alt="">
+        </div>
+    </section>
+
+    <section class="sec sec4">
+        <div class="con">
+            <p class="for-hide">제품소개</p>
+            <span class="section-name">Item</span>
+            <ul class="item-wrap">
+                <li class="mobile-show">
+                    <a href="#"></a>
+                    <div class="opacity-wrap">
+                        <div class="item-box">
+                            <div class="visible">
+                                <div class="section-name">Item</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(./img/slide01.jpg);">
+                    <a href="#"></a>
+                    <div class="opacity-wrap">
+                        <div class="item-box">
+                            <img src="./img/item-pito-01.svg" alt="">
+                            <div class="visible">
+                                <span>FREEZE<br>DRYER</span>
+                                <p class="for-hide">Freeze Dryer는 급속,저속냉각으로 원하는 연구재료를 냉동건조 시킬 수 있는 기술의 장치입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(./img/slide02.jpg);">
+                    <a href="#"></a>
+                    <div class="opacity-wrap">
+                        <div class="item-box">
+                            <img src="./img/item-pito-02.svg" alt="">
+                            <div class="visible">
+                                <span>FREEZE<br>DRYER</span>
+                                <p class="for-hide">Freeze Dryer는 급속,저속냉각으로 원하는 연구재료를 냉동건조 시킬 수 있는 기술의 장치입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(./img/slide03.jpg);">
+                    <a href="#"></a>
+                    <div class="opacity-wrap">
+                        <div class="item-box">
+                            <img src="./img/item-pito-03.svg" alt="">
+                            <div class="visible">
+                                <span>FREEZE<br>DRYER</span><span class="show-mobile"> - For Lab</span>
+                                <p class="for-hide">Freeze Dryer-for lab은 연구실 사용에 최적화된 냉동건조 기계입니다.</p>
+                                <p>-For lab-</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(./img/slide04.jpg);">
+                    <a href="#"></a>
+                    <div class="opacity-wrap">
+                        <div class="item-box">
+                            <img src="./img/item-pito-04.svg" alt="">
+                            <div class="visible">
+                                <span>SAKER</span>
+                                <p class="for-hide">saker는 액체 혼합을 위한 기계설비입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(./img/slide05.jpg);">
+                    <a href="#"></a>
+                    <div class="opacity-wrap">
+                        <div class="item-box">
+                            <img src="./img/item-pito-05.svg" alt="">
+                            <div class="visible">
+                                <span>INCUBATOR</span>
+                                <p class="for-hide">incubator는 장/단기간 배양을 요구하는 재료의 온도,습도,광원등을 제어하여 원하는 목표치를 얻어 낼 수 있도록 하는 기술입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(./img/slide06.jpg);">
+                    <a href="#"></a>
+                    <div class="opacity-wrap">
+                        <div class="item-box">
+                            <img src="./img/item-pito-06.svg" alt="">
+                            <div class="visible">
+                                <span>BLOOD BANK</span>
+                                <p class="for-hide">혈액 보관기기 입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(./img/slide07.jpg);">
+                    <a href="#"></a>
+                    <div class="opacity-wrap">
+                        <div class="item-box">
+                            <img src="./img/item-pito-07.svg" alt="">
+                            <div class="visible">
+                                <span>FAST FREEZER</span>
+                                <p class="for-hide">급속 냉동기 입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sec sec5">
+        <div class="con">
+            <div class="menual-wrap">
+                <span class="section-name">User Menual</span>
+                <p>각 제품의 정확한 사용 방법을 확인해 보세요</p>
+            </div>
+            <div class="btn-wrap">
+                <span class="btn btn1">메뉴얼 다운로드</span>
+                <span class="btn btn2">카탈로그 다운로드</span>
+            </div>
+            <div class="img-wrap">
+                <img src="./img/menual-ilsin.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="con">
+            <ul class="top">
+                <p class="for-hide">푸터입니다.</p>
+                <li><a href="#">이미지</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">운영정책</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사업자등록</a></li>
+                <li><a href="#">사이트 이용 안내</a></li>
+            </ul>
+        </div>
+        <div class="mid-text-wrap">
+            <div class="con">
+                <div class="text-wrap">
+                    <span>삼화페인트공업(주)</span>
+                    <span>대표이사 : 김재관</span>
+                    <span>서울본사: 서울 종로구 돈화문로 58 (묘동)</span>
+                    <span>안산공장: 경기도 안산시 단원구 별망로 178 (성곡동)</span>
+                    <span class="show-map">지도보기</span>
+                </div>
+                <nav class="footer-util">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./img/picto - instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/picto - facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/picto - youtube.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <div class="top-btn">
+            <p class="for-hide">최상단으로 이동하기</p>
+            <div class="arrow arrow01"></div>
+            <div class="arrow arrow02"></div>
+            <div class="arrow arrow03"></div>
+            <div class="arrow arrow04"></div>
+            <span>TOP</span>
+    </div> 
+    <div class="map-wrap">
+        <div class="map-btn-wrap">
+            <div class="map-btn">
+                <div class="map-btn-stroke stroke1"></div>
+                <div class="map-btn-stroke stroke2"></div>
+            </div>
+        </div>
+        <iframe class="map-show" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.319757080648!2d126.9899058156482!3d37.571087531624485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2de05f06b3b%3A0xd5d9c526fa9f753b!2z7ISc7Jq47Yq567OE7IucIOyiheuhnOq1rCDrrJjrj5kgNTgtMg!5e0!3m2!1sko!2skr!4v1620626924405!5m2!1sko!2skr"style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div> 
+</body>
+</html>
