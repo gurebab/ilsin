@@ -818,7 +818,6 @@ footer > .con > .top{
     width: 40px;
     height: 40px;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 .mobile-nav .moblie-close-wrap .close-relative{
     position: relative;
