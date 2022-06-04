@@ -402,6 +402,9 @@ header{
 .sec3 > .culum > .con > .text-wrap > span.active::before{
     padding-top: 25%;
 }
+.sec3 > .culum03 > .con > .text-wrap > span.active::before{
+    display: none;
+}
 .sec3 > .culum > .con > .text-wrap > .section-name::first-letter{
     color: #ff7c24;
     font-family: title-font;
@@ -501,7 +504,7 @@ header{
 .sec4 > .con > .item-wrap > li > .opacity-wrap > .item-box{
     position: absolute;
     transform: translate(-50%,-50%);
-    top : 50%;
+    top : 45%;
     left: 50%;
     width: 80%;
     text-align: center;
@@ -552,7 +555,7 @@ header{
     padding-bottom: 50px;
 }
 .sec5 > .con{
-    padding-top: 30%;
+    padding-top: 20%;
     position: relative;
 }
 .sec5 > .con > .menual-wrap {

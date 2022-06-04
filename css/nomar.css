@@ -74,23 +74,11 @@ p , span{
   background-size: cover;
   background-position: center;
 }
-.for-hide{
-  font-size: 0;
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
 .text-hide{
-  overflow: hidden;
-  border: 0;
   position: absolute;
   z-index: -1;
-  width: 1px;
-  height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
+  text-indent: -9999px;
+  overflow: hidden;
 }
 @media (max-width : 1600px ){
   .con{
